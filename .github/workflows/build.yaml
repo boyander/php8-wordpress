@@ -7,7 +7,7 @@ jobs:
   build:
     name: Prepare Multiarch Images
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v2
       - name: Set up QEMU
