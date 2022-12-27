@@ -24,4 +24,3 @@ Faable is a platform to build modern architectures that scale precisely to meet 
 ## References
 
 - https://hub.docker.com/layers/alpine/k8s/1.23.15/images/sha256-a3a73b14c5cf3a8e11b5eaf5c0e79730f8d7dfcd7a951e7e8b8bd62df1a9996c?context=explore
-# php8-apache
