@@ -26,10 +26,3 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: boyander/php8-wordpress:nginx
-      - name: Build Apache Image
-        uses: docker/build-push-action@v2
-        with:
-          context: php8-apache
-          platforms: linux/amd64,linux/arm64
-          push: true
-          tags: boyander/php8-wordpress:apache
