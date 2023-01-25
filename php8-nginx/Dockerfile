@@ -6,6 +6,7 @@ STOPSIGNAL SIGTERM
 
 RUN apk update && apk upgrade
 RUN apk add bash
+RUN apk add vim
 RUN apk add nginx
 RUN apk add freetype-dev libjpeg-turbo-dev libwebp-dev libpng-dev
 RUN apk add php81 
