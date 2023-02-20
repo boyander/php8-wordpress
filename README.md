@@ -19,12 +19,6 @@ To run php with Nginx in Alpine
 FROM boyander/php8-wordpress:nginx
 ```
 
-To run php with Apache in Ubuntu
-
-```Dockerfile
-FROM boyander/php8-wordpress:apache
-```
-
 ## Faable
 
 Faable is a platform to build modern architectures that scale precisely to meet demand. We handle the hard stuff so you can focus on building cloud ready apps. Make your business cloud driven and join those awesome companies.

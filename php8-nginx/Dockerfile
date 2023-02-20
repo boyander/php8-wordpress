@@ -14,6 +14,7 @@ RUN apk add php81-fpm php81-opcache
 RUN apk add php81-gd php81-zlib php81-curl
 RUN apk add php81-mysqli
 
+WORKDIR /var/www
 COPY etc/nginx /etc/nginx
 COPY etc/php /etc/php81
 RUN mkdir /var/run/php
