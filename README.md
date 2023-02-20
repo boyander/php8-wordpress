@@ -13,10 +13,10 @@
 
 PHP8 image to run wordpress in `arm64` clusters
 
-To run php with Nginx in Alpine
+To run php8 with Nginx in Alpine
 
 ```Dockerfile
-FROM boyander/php8-wordpress:nginx
+FROM boyander/php8-wordpress
 ```
 
 ## Faable
