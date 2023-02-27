@@ -5,4 +5,4 @@ services:
     ports:
       - "5000:80"
     volumes:
-      - ../src/wordpress:/var/www
+      - ../src:/var/www
