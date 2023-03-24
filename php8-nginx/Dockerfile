@@ -18,6 +18,10 @@ RUN apk add php81-mysqli
 RUN apk add php81-mysqli
 RUN apk add php81-phar
 
+# Required by wp-cli
+RUN apk add php81-iconv
+RUN apk add mysql-client 
+
 ## Add wordpress cli
 RUN wget -O /usr/local/bin/wp https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 RUN chmod +x /usr/local/bin/wp
