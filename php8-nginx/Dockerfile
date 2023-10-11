@@ -17,6 +17,7 @@ RUN apk add php81-gd php81-zlib php81-curl
 RUN apk add php81-mysqli
 RUN apk add php81-mysqli
 RUN apk add php81-phar
+RUN apk add php81-simplexml
 
 # Required by wp-cli
 RUN apk add php81-iconv
