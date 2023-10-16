@@ -20,6 +20,9 @@ RUN apk add php81-phar
 RUN apk add php81-simplexml
 RUN apk add php81-dom
 RUN apk add php81-xml
+RUN apk add php81-xmlwriter
+RUN apk add php81-xmlreader
+RUN apk add php81-zip
 
 # Required by wp-cli
 RUN apk add php81-iconv
