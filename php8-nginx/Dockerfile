@@ -16,6 +16,7 @@ RUN apk add php81-fpm php81-opcache
 RUN apk add php81-gd php81-zlib php81-curl
 RUN apk add php81-mysqli
 RUN apk add php81-mysqli
+RUN apk add php81-pdo_pgsql
 RUN apk add php81-phar
 RUN apk add php81-simplexml
 RUN apk add php81-dom
@@ -23,6 +24,7 @@ RUN apk add php81-xml
 RUN apk add php81-xmlwriter
 RUN apk add php81-xmlreader
 RUN apk add php81-zip
+RUN apk add php81-xsl
 
 # Required by wp-cli
 RUN apk add php81-iconv
