@@ -19,6 +19,7 @@ RUN apk add php81-mysqli
 RUN apk add php81-phar
 RUN apk add php81-simplexml
 RUN apk add php81-dom
+RUN apk add php81-xml
 
 # Required by wp-cli
 RUN apk add php81-iconv
