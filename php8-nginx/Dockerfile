@@ -10,6 +10,7 @@ RUN apk add vim
 RUN apk add nginx
 RUN apk add freetype-dev libjpeg-turbo-dev libwebp-dev libpng-dev
 RUN apk add imagemagick
+RUN apk add redis
 
 ## PHP extension modules
 RUN apk add php81 
@@ -29,6 +30,7 @@ RUN apk add php81-exif
 RUN apk add php81-fileinfo
 RUN apk add php81-intl
 RUN apk add php81-pecl-imagick
+RUN apk add php81-pecl-redis
 
 # Required by wp-cli
 RUN apk add php81-iconv
