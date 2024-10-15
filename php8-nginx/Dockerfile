@@ -11,6 +11,7 @@ RUN apk add nginx
 RUN apk add freetype-dev libjpeg-turbo-dev libwebp-dev libpng-dev
 RUN apk add imagemagick
 RUN apk add redis
+RUN apk add htop
 
 ## PHP extension modules
 RUN apk add php81 
