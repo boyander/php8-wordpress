@@ -1,4 +1,4 @@
-FROM alpine:3.17.0
+FROM alpine:3.22.2
 
 EXPOSE 80
 EXPOSE 443
@@ -13,28 +13,31 @@ RUN apk add imagemagick
 RUN apk add htop
 
 ## PHP extension modules
-RUN apk add php81 
-RUN apk add php81-fpm php81-opcache
-RUN apk add php81-gd php81-zlib php81-curl
-RUN apk add php81-mysqli
-RUN apk add php81-pdo_pgsql
-RUN apk add php81-phar
-RUN apk add php81-simplexml
-RUN apk add php81-dom
-RUN apk add php81-xml
-RUN apk add php81-xmlwriter
-RUN apk add php81-xmlreader
-RUN apk add php81-zip
-RUN apk add php81-xsl
-RUN apk add php81-exif
-RUN apk add php81-fileinfo
-RUN apk add php81-intl
-RUN apk add php81-pecl-imagick
-RUN apk add php81-ctype
-RUN apk add php81-pecl-redis
+RUN apk add php84 
+RUN apk add php84-fpm 
+RUN apk add php84-opcache
+RUN apk add php84-gd 
+RUN apk add php84-zlib 
+RUN apk add php84-curl
+RUN apk add php84-mysqli
+RUN apk add php84-pdo_pgsql
+RUN apk add php84-phar
+RUN apk add php84-simplexml
+RUN apk add php84-dom
+RUN apk add php84-xml
+RUN apk add php84-xmlwriter
+RUN apk add php84-xmlreader
+RUN apk add php84-zip
+RUN apk add php84-xsl
+RUN apk add php84-exif
+RUN apk add php84-fileinfo
+RUN apk add php84-intl
+RUN apk add php84-pecl-imagick
+RUN apk add php84-ctype
+RUN apk add php84-pecl-redis
 
 # Required by wp-cli
-RUN apk add php81-iconv
+RUN apk add php84-iconv
 RUN apk add mysql-client 
 
 ## Add wordpress cli
@@ -43,7 +46,7 @@ RUN chmod +x /usr/local/bin/wp
 
 WORKDIR /var/www
 COPY etc/nginx /etc/nginx
-COPY etc/php /etc/php81
+COPY etc/php /etc/php84
 RUN mkdir /var/run/php
 
 COPY start-nginx.sh /usr/local/bin/start-nginx
