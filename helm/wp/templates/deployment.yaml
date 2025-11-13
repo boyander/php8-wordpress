@@ -33,6 +33,17 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       containers:
+        {{- if .Values.redis.enabled -}}
+        {{ printf "\n" }}
+        - name: redis
+          image: redis
+          {{- with .Values.redis.resources }}
+          resources:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+          ports:
+            - containerPort: 6379
+        {{- end  }}
         - name: {{ .Chart.Name }}
           {{- with .Values.securityContext }}
           securityContext:
