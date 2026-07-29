@@ -19,6 +19,16 @@ To run php8 with Nginx in Alpine
 FROM boyander/php8-wordpress
 ```
 
+## El chart de Helm ya no vive aquí
+
+`helm/wp` se movió a `faablecloud/faable-infra-flux`, en `argo-cd/charts/wp`,
+junto a las Applications que lo consumen
+(`argo-cd/poz1/apps/wordpress/`). Este repo se queda solo con la imagen.
+
+El motivo: las Applications de ArgoCD lo seguían desde aquí en
+`targetRevision: main` con `prune + selfHeal`, así que cualquier commit a este
+repo desplegaba solo a producción sin pasar por revisión.
+
 ## Faable
 
 Faable is a platform to build modern architectures that scale precisely to meet demand. We handle the hard stuff so you can focus on building cloud ready apps. Make your business cloud driven and join those awesome companies.
