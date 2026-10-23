@@ -13,7 +13,9 @@ RUN apk add imagemagick
 RUN apk add htop
 
 ## PHP extension modules
-RUN apk add php84 
+# >= 8.4.27: PHP2Shell (CVE-2026-109618/109619, unauthenticated RCE). The
+# floor makes the build fail instead of shipping an older php84 from a stale mirror.
+RUN apk add 'php84>=8.4.27'
 RUN apk add php84-fpm 
 RUN apk add php84-opcache
 RUN apk add php84-gd 
